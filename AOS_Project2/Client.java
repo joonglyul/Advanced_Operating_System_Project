@@ -241,42 +241,6 @@ public class Client{
 		 List <String> list = new ArrayList<String>();
 		 	
 		 //***** File-servers list *****
-		 /**
-		 String toMsg=null, tempBuf=null, strLine=null;		
-		
-		 try {
-			 FileInputStream fstream = new FileInputStream("ClientList.conf");
-			  
-			 DataInputStream in = new DataInputStream(fstream);
-			 BufferedReader br = new BufferedReader(new InputStreamReader(in));
-			  			
-			 while ((strLine = br.readLine()) != null){					  
-				  toMsg = toMsg+strLine;
-			 }
-			  
-			 in.close();		
-		
-		 }catch(Exception e){
-			 e.printStackTrace();
-		 }
-		
-       StringBuffer buffer = new StringBuffer(toMsg.length());  
-	        for(int i = 0; i < toMsg.length(); i++) {  
-	              char ch = toMsg.charAt(i);  
-	              if((ch >= '0') && (ch <= '9') || (ch == '.') || (ch =='/')) {  
-	                buffer.append(ch);  
-	             }  
-	         }  
-	        
-       toMsg =buffer.toString();  
-	   
-	    StringTokenizer st = new StringTokenizer(toMsg,"/");
-	     while (st.hasMoreTokens()) {
-	    	 tempBuf = st.nextToken().trim();
-	         System.out.println("[Client] Client List : "+tempBuf);
-	         list.add(tempBuf);
-	     }
-	     **/
 		 
 		 list.add("10.176.67.83");		
 		 list.add("10.176.67.84");
