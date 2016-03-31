@@ -446,10 +446,6 @@ class AckReceiverThread implements Runnable{
 				child = server.accept();
 				ois = new ObjectInputStream(child.getInputStream());
 								
-				//ReceiveThread childThread = new ReceiveThread(child);
-				//Thread t = new Thread(childThread);
-				//t.start();
-							
 				while(true){
 					receiveData = (MSG) ois.readObject();
 					if (receiveData != null){
